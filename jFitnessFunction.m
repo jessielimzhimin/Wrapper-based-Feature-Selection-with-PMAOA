@@ -18,7 +18,7 @@ for d = 1: Total_Feature
     end
 end
 
-%% To evaluate the fitness value of each DE solution after it is converted into binary values
+%% To evaluate the fitness value of each solution after it is converted into binary values
 if sum(X == 1) == 0 %if none of the feature is selected (cannot train the classifier then)
   cost = 1; % just assign it with a default value of 1
   error = 1;
@@ -70,4 +70,5 @@ end
 Acc   = correct / num_valid; 
 error = 1 - Acc; 
 end
+
 
