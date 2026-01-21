@@ -21,10 +21,3 @@ The benchmark datasets used in the experiments are sourced from the **UCI Machin
 - `jPMAOA.m`: main PMAOA optimizer for wrapper-based feature selection
 - `jFitnessFunction.m`: wrapper evaluation (KNN-based) and fitness computation
 
-## Usage (MATLAB)
-
-1. Open MATLAB and set the project folder (this repository) as your working directory.
-2. Run:
-
-```matlab
-main
