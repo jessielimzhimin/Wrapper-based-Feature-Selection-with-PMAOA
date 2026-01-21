@@ -1,6 +1,6 @@
-# PMAOA (Peer-guided Mutation Arithmetic Optimization Algorithm) for Wrapper-based Feature Selection
+# PMAOA (Peer-Modulated Arithmetic Optimization Algorithm) for Wrapper-based Feature Selection
 
-This repository provides a MATLAB implementation of **PMAOA**, a peer-guided variant of the Arithmetic Optimization Algorithm (AOA) designed for **wrapper-based feature selection**. PMAOA searches for an optimal subset of features by optimizing a continuous position vector in \[0, 1\] and converting it to a binary feature mask using a threshold (default `0.5`). Each candidate feature subset is evaluated using a **KNN classifier** inside a fitness function.
+This repository provides a MATLAB implementation of **PMAOA**, a peer-guided variant of the Arithmetic Optimization Algorithm (AOA) designed for **wrapper-based feature selection**. PMAOA searches for an optimal subset of features by optimizing a continuous position vector and converting it to a binary feature mask using a threshold. Each candidate feature subset is evaluated using a **KNN classifier** inside a fitness function.
 
 ## Key Idea
 
@@ -14,7 +14,7 @@ PMAOA combines two complementary phases to balance exploration and exploitation:
 
 2. **Mutation and Restarting phase (alternating by generation)**  
    - **Mutation:** uses two randomly selected peers and an optional delayed-leader term to promote diversity while keeping search direction.
-   - **Restarting:** randomly reinitializes a portion of dimensions (default 30%) to escape stagnation.
+   - **Restarting:** randomly reinitializes a portion of dimensions to escape stagnation.
 
 Dynamic boundary handling is applied to ensure all decision variables remain in the valid range.
 
