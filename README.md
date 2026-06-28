@@ -30,7 +30,7 @@ The benchmark datasets used in the experiments are sourced from the **UCI Machin
 
 ## Evaluation Protocol
 
-Each dataset is split using a stratified hold-out scheme: an outer test split is held out and never seen by the optimizer, while an inner validation split (drawn only from the training portion) is used by the wrapper fitness function during the search. The selected feature subset is evaluated once on the held-out test split using a KNN classifier. This protocol is repeated over 20 independent runs per dataset with a fixed per-run random seed, ensuring identical train/test partitions are used when comparing PMAOA against the 14 competing metaheuristic algorithms reported in the manuscript.
+Each dataset is split into an 80/20 train-test partition: the 20% outer test split is held out and never seen by the optimizer, while an inner validation split (drawn only from the training portion) is used by the wrapper fitness function during the search. The selected feature subset is evaluated once on the held-out test split using a KNN classifier. This protocol is repeated over 20 independent runs per dataset, with each run drawing a different random train-test partition; the same sequence of partitions is used consistently across PMAOA and the 14 competing metaheuristic algorithms reported in the manuscript, so that every algorithm is evaluated on the same set of splits run-for-run.
 
 ## Usage
 
