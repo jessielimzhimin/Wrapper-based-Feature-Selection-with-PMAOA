@@ -8,7 +8,7 @@ Feature selection is a critical pre-processing step in machine learning that eli
 
 The **Peer-Guided Stage (PGS)** introduces socially modulated interactions where each candidate solution learns from randomly chosen peers instead of relying only on a global best solution. This helps maintain population diversity and prevents stagnation.
 
-The **Adaptive Learning Stage (ALS)** integrates cross-generational learning and selective rejuvenation through two coordinated modes: **Historical Difference Learning (HDL)**, which exploits accumulated inter-generation knowledge for refinement, and **Partial Random Reinitialization (PRI)**, which rejuvenates selected dimensions of candidate solutions to sustain exploration.
+The **Adaptive Learning Stage (ALS)** integrates cross-generational learning and selective rejuvenation through two coordinated modes: **Historical Difference Learning (HDL)**, which exploits accumulated inter-generation knowledge for refinement, and **Partial Random Reinitialization (PRR)**, which rejuvenates selected dimensions of candidate solutions to sustain exploration.
 
 Experiments on twenty benchmark datasets show that PMAOA achieves superior or comparable classification accuracy with smaller feature subsets and moderate computational cost. This method contributes to process innovation in intelligent optimization and can support data-driven applications in smart city ecosystems.
 
